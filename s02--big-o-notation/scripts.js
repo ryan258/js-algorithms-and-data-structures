@@ -20,7 +20,7 @@ console.log('beep')
 //- faster? (small num vs. large num)
 //- less memory-intensive?
 //- more readable?
-//  TODO: Example - Suppose we want to write a fn that calcs the sum of a ll numbers from 1 up to and including some number n
+//  TODO: Example - Suppose we want to write a fn that calcs the sum of  ll numbers from 1 up to and including some number n
 //- simple solution
 
 /*function addUpTo(n) {
@@ -59,7 +59,7 @@ console.log(`Time Elapsed: ${(t2b - t1b) / 1000} seconds`) //! 0.00009 <-- much 
 */
 
 //! //////////////////////////////////
-//! Counting Operations
+//! Counting Operations > Comparing Time
 //? If not time, then what?
 //- rather than counting seconds which are so variable, we count the number of simple operations the computer has to perform, because this remains contant
 
@@ -101,9 +101,9 @@ console.log(`Time Elapsed: ${(t2b - t1b) / 1000} seconds`) //! 0.00009 <-- much 
 //- AddUpToFirst takes a lot more time, like linearly in proportion (1 to 1)
 
 //! //////////////////////////////////
-//! Official Into to Big O
+//! Official Intro to Big O
 //! A way to formalize fuzzy counting - just a generalized way for talking about how efficient an algorithm is as an input "n" grows how the change is reflected in the runtime
-//!   that allows us to formally talk about how the runtime  of an algorithm grows as the inputs grows
+//!   that allows us to formally talk about how the runtime of an algorithm's growth as the inputs grows
 //  - that's it, it's just a way of describing the relationship between the input and the runtime of that function
 //! - we don't care about the details, only the trends!
 
@@ -136,9 +136,9 @@ function addUpTo(n) {
   return total
 }*/
 
-// ^This^ would be LINEAR because runtime grows as "n" grows in basically a 1 to 1 ratio
-//- The number of operations is (eventually) bounded by a multiple of "n" (say, 10n)
-//  - but it doesn't really matter whether it's 5n, 10n, or 50n bc in the end we simplify it down to just "n"
+// ^This^ would be LINEAR because runtime grows as "n" grows it's basically a 1 to 1 ratio
+//  - The number of operations is (eventually) bounded by a multiple of "n" (say, 10n)
+//    - but it doesn't really matter whether it's 5n, 10n, or 50n bc in the end we simplify it down to just "n"
 //! so it's O(n) - "We're just concerned w/ the order of magnitude!"
 
 //! //////////////////////////////////
@@ -177,7 +177,7 @@ function addUpTo(n) {
 //!- SPACE COMPLEXITY can also analyze (and use the same Big O syntax) how much ADDITIONAL MEMORY do we need to allocate in order to run the code in our algorithm
 // - "auxillary space complexity" - refers to space required by the ALGORITHM ONLY, not including space taken up by the inputs
 // - here we're talking about the algorithm itself, as "n" grows we're assuming the input "n" is going to grow - so we're not going to care about that space and focus on the repercussions that has inside the algorithm
-//! - SO UNLESS OTHERWISE NOTES - when we talk about space complexity, we're technically talking about AUXILLARY SPACE COMPLEXITY
+//! - SO UNLESS OTHERWISE NOTED - when we talk about space complexity, we're technically talking about AUXILLARY SPACE COMPLEXITY
 //    basically focusing on what's happening inside the algorithm
 
 //! Rules of Thumb
